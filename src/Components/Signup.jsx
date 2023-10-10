@@ -6,6 +6,7 @@ const Signup = () => {
   return (
     <div className='container d-flex justify-content-center align-items-center bg-primary vh-100'>
      <div className='bg-white p-3 rounded w-255 '>
+     <h2>Sign up</h2>
     <form action=''>
     <div className='mb-3'>
     <label htmlFor='name'><strong>Name</strong></label>
@@ -18,9 +19,9 @@ const Signup = () => {
     <div className='text'>
 
     </div>
-    <button className='btn btn-success w-100 rounded-0'>Sign up</button>
+    <input type='submit' className='btn btn-success w-100 rounded-0' value={"Sign up"} />
     <p>Remember me</p>
-    <link to ="/" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Create Account</link>
+    <Link to ="/" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Login</Link>
     </form>
     </div>
     </div>

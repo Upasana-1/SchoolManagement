@@ -84,7 +84,8 @@
     border: none;
     font-size: 19px;
     height: 50px;
-    weight: 400px;
+    /* weight: 400px; */
+    width: 400px
     
 }
 .text{
