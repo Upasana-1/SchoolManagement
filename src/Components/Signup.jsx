@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-// import Validation from './Components/Signupvalidation'
+import Validation from './LoginSignup/Signupvalidation'
 
 const Signup = () => {
 
@@ -29,14 +29,14 @@ const Signup = () => {
           <div className='mb-3'>
             <label htmlFor='name'><strong>Name</strong></label>
             <input type='text' placeholder='Enter Name' name='name'
-              {...errors.email && <span className='text-danger'>{errors.name}</span>}
               onChange={handleInput} className='form-control rounded-0' />
+              {errors.email && <span className='text-danger'>{errors.name}</span>}
           </div>
           <div className='mb-3'>
             <label htmlFor='email'><strong>Email</strong></label>
             <input type='email' placeholder='Email Address' name='email'
-              {...errors.password && <span className='text-danger'>{errors.email}</span>}
               onChange={handleInput} className='form-control rounded-0' />
+              {errors.password && <span className='text-danger'>{errors.email}</span>}
           </div>
           <div className='mb-3'>
             <label htmlFor='password'><strong>Password</strong></label>
@@ -46,7 +46,7 @@ const Signup = () => {
           <div className='text'>
 
           </div>
-          <button type='submit' className='btn btn-success w-100 rounded-0' value={"Sign up"} />
+          <button type='submit' className='btn btn-success w-100 rounded-0' >Sign up </button>
           <p>Remember me</p>
           <Link to="/" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Login</Link>
         </form>
