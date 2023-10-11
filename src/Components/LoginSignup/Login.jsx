@@ -15,7 +15,7 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setValues(validate(values));
+    setValues(Validate(values));
     
   }
 
@@ -24,16 +24,19 @@ function Login() {
   return (
     <div className='container d-flex justify-content-center align-items-center bg-primary vh-100'>
       <div className='bg-white p-3 rounded w-255 '>
-        <h2>Sing In</h2>
+        <h2>Sign  In</h2>
         <form action='' onSubmit={handleSubmit}>
           <div className='mb-3'>
             <label htmlFor='email'><strong>Email</strong></label>
-            <input type='email' id='email' placeholder='Email Address'
-              onChange={handleInput} className='form-control rounded-0' />
+            <input type='email' id='email' placeholder='Email Address'  name='email'
+             onChange={handleInput} className='form-control rounded-0'/>
+             {errors.email && <span className='text-danger'>{errors.email}</span>}
           </div>
           <div className='mb-3'>
             <label htmlFor='password'><strong>Password</strong></label>
-            <input type='password' id='password' placeholder='Enter password' className='form-control rounded-0' />
+            <input type='password' id='password' placeholder='Enter password' name='password'
+            onChange={handleInput} className='form-control rounded-0'/>
+            {errors.password && <span className='text-danger'>{errors.password}</span>}
           </div>
           <input type='submit' className='btn btn-success w-100 rounded-0' value={"Login"} />
           <p>Remember me</p>
