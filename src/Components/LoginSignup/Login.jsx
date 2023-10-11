@@ -15,11 +15,9 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setValues(Validate(values));
+    setErrors(Validation(values));
     
-  }
-
-  
+  } 
   
   return (
     <div className='container d-flex justify-content-center align-items-center bg-primary vh-100'>
@@ -38,7 +36,7 @@ function Login() {
             onChange={handleInput} className='form-control rounded-0'/>
             {errors.password && <span className='text-danger'>{errors.password}</span>}
           </div>
-          <input type='submit' className='btn btn-success w-100 rounded-0' value={"Login"} />
+          <button type='submit' className='btn btn-success w-100 rounded-0' value={"Login"} />
           <p>Remember me</p>
           <Link to="/signup" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Create Account</Link>
         </form>

@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
-import Login from './Components/LoginSignup/Login'
-import Signup from './Components/Signup'
-import './index.css'
 import Validation from './Components/Loginvalidation'
+import Signupvalidation from './Components/LoginSignup/Signupvalidation'
+//import Signup from './Components/Signup'
+import './index.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
