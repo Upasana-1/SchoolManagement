@@ -8,3 +8,19 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+
+/* 
+const  Login = () => {
+                const[isLoggedIn, setLoggedIn] = useState(false);
+            
+            useEffect(() => {
+            setIsLoggedIn(true);
+            }, []);
+            
+            if (isLoggedIn) {
+            return <Navigate to="/home" />; }
+            else {
+            return <div>{"Login Please"}</div>
+            }
+            };*/
+            
