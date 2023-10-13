@@ -75,9 +75,7 @@ Please Enter your email address
               </div>
           
           </div>
-          <button type='submit' className='btn btn-success w-100 rounded-0' >Login </button>
-
-          
+          <Link to="/home" className='btn btn-success w-100 rounded-0'>Login</Link>
           <div className='form-group form-check mb-2'>
          <input type='checkbox' className='form-check-input'></input>
          <label htmlFor='check' className='form-check-label'>Remember me</label>
@@ -85,7 +83,8 @@ Please Enter your email address
           </div>
           
 
-          <Link to="/signup" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Create Account</Link>
+        <Link to="/signup" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Create Account</Link>
+        
         </form>
         </form>
        

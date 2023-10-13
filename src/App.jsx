@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
+//import Logins from './Components/LoginSignup/Logins'
 // import Validation from './Components/Loginvalidation'
 // import Signupvalidation from './Components/LoginSignup/Signupvalidation'
 import Login from './Components/LoginSignup/Login'
-
 import Signup from './Components/Signup'
 import Home from './Components/LoginSignup/Home/Home'
 import './index.css'
@@ -17,7 +17,6 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-
         <Route exact path='/' element={<Login />} />
         <Route exact path='/signup' element={<Signup />} />
         <Route exact path='/home' element={<Home />} />
