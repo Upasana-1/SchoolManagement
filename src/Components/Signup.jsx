@@ -24,7 +24,7 @@ const Signup = () => {
   return (
 <>
 <h1 className="text-center mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl align-content: center;"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Welcome to</span> Mero Vidhyala</h1>
-    <p class="text-center text-3xl text-gray-800 dark:text-white">A complete Result Management System</p>
+    <p class="text-center text-3xl text-gray-800 dark:text-white">A complete Exam Management System</p>
     <div className='container d-flex justify-content-center align-items-center bg-warning-subtle vh-100'>
       <div className='bg-white p-3 rounded w-255 '>
         <h2>Sign-Up</h2>
